@@ -1,13 +1,10 @@
 var kavea = {
-    languages:["ქართული", "ინგლისური", "რუსული"]
+    languages:["ენები:ქართულად", "ინგლისურად", "რუსულად"]
 }
 movies: [
-    {name:"Doctor Strange" ,imdb:7},
-    {name:"Spider Man" ,imdb:7.5},
-    {name:"Vikings",imdb:5.7},
-    {name:"Ukrainian Days",imdb:6.5}
+    {name:"ფილმი:Doctor Strange" ,imdb:7},
+    {name:"ფილმი:Spider Man" ,imdb:7.5},
+    {name:"ფილმი:Vikings",imdb:5.7},
+    {name:"ფილმი:Ukrainian Days",imdb:6.5}
 ]
-document.write("movies to watch at the moment")
-for(var i=0; i<kavea.languages.length; i++){
-    document.write(country.languages[i]);
-}
+document.getElementById("description").innerHTML=(kavea.languages+ "</br>" + kavea.movies.name + "</br>" + kavea.movies.imdb)
