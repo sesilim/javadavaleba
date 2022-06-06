@@ -1,9 +1,11 @@
-var days=[
-    "ორშაბათი", "სამშაბათი", "ოთხშაბათი", "ხუთშაბათი", "პარასკევი", "შაბათი", "კვირა"
-]
-var hours=[
-    1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,
-]
-var mydate= new Date();
-var date=days[mydate.getDay()]  + hours[mydate.getHours()];
-console.log(date)
+var cinema={
+    name: [ "კავეა(სითი მოლი)", "ამირანი", "კავეა(ისთ ფოინთი)" ],
+    language: ["ქართული", "ინგლისური", "რუსული"],
+    movies: [
+        {name:"ფილმი:Doctor Strange" ,imdb:7},
+        {name:"ფილმი:Spider Man" ,imdb:7.5},
+        {name:"ფილმი:Vikings",imdb:5.7},
+        {name:"ფილმი:Ukrainian Days",imdb:6.5}
+    ]
+}
+
